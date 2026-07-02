@@ -15,7 +15,7 @@ func TestGetApiKey(t *testing.T) {
 		{
 			Name:           "Empty Authorization Header (Missing)",
 			Authorization:  "",
-			ShouldError:    false,
+			ShouldError:    true,
 			ExpectedResult: "",
 		},
 		{
