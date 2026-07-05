@@ -33,5 +33,5 @@ jobs:
         run: docker build -t erikcf/notely:latest .
 
       - name: 'Push to google registry'
-        run: gcloud builds submit --tag us-central1-docker.pkg.dev/notely-501407/notely-ar-repo:latest .
+        run: gcloud builds submit --tag us-central1-docker.pkg.dev/notely-501407/notely-ar-repo/notely:latest .
 
